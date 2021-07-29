@@ -46,7 +46,7 @@ const textOverLength = () => {
       textCutted[0][i] = "<span style='color:"+ `${color.value}` + "'>" + textCutted[0][i] + "</span>";
     }
   }
-  console.log(textCutted);
+  //console.log(textCutted);
   return textCutted;
 }
 
@@ -59,7 +59,7 @@ btn_search.onclick = () => {
   for(let i = 0; i < 312; i++){
     textWithSpan += `${addedSpan[0][i]}` + " ";
   }
-  console.log(textWithSpan);
+  //console.log(textWithSpan);
   text.innerHTML = textWithSpan;
 }
 
