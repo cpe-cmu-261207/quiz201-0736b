@@ -42,7 +42,7 @@ const wordCut = (str) => {
 const textOverLength = () => {
   const textCutted = wordCut(tempText);
   for(let i = 0; i < 312; i++){
-    if(textCutted[0][i].length >= length.value){
+    if(textCutted[0][i].length > length.value){
       textCutted[0][i] = "<span style='color:"+ `${color.value}` + "'>" + textCutted[0][i] + "</span>";
     }
   }
